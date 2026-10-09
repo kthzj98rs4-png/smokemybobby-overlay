@@ -221,3 +221,8 @@
 .controller.custom .meta.pressed {
     outline: 3px solid #00c8ff !important;
 }
+
+/* Move the whole controller down */
+.controller.custom {
+    top: 100px !important;
+}
