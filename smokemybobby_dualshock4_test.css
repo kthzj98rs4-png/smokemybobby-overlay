@@ -1,0 +1,223 @@
+
+/* SMOKEMYBOBBY — CUSTOM DUALSHOCK 4 DECAL */
+.controller.custom {
+    position: relative !important;
+    width: 1015px !important;
+    height: 576px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background:
+      url("https://raw.githubusercontent.com/kthzj98rs4-png/smokemybobby-overlay/refs/heads/main/smokemybobby_dualshock4.png")
+      center / 100% 100% no-repeat transparent !important;
+    overflow: visible !important;
+}
+
+/* Keep the decal when disconnected */
+.controller.custom.disconnected {
+    background:
+      url("https://raw.githubusercontent.com/kthzj98rs4-png/smokemybobby-overlay/refs/heads/main/smokemybobby_dualshock4.png")
+      center / 100% 100% no-repeat transparent !important;
+}
+.controller.custom.disconnected > div {
+    display: none !important;
+}
+
+/* No default button artwork */
+.controller.custom .trigger,
+.controller.custom .trigger-button,
+.controller.custom .bumper,
+.controller.custom .button,
+.controller.custom .face,
+.controller.custom .stick,
+.controller.custom .wheel,
+.controller.custom .back,
+.controller.custom .start,
+.controller.custom .touchpad,
+.controller.custom .meta,
+.controller.custom .quadrant,
+.controller.custom .fstick {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* Shoulder triggers */
+.controller.custom .triggers {
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    width: 815px;
+    height: 90px;
+}
+.controller.custom .trigger {
+    position: absolute;
+    top: 0;
+    width: 190px;
+    height: 75px;
+    opacity: 0;
+}
+.controller.custom .trigger.left { left: 0; }
+.controller.custom .trigger.right { right: 0; }
+.controller.custom .trigger.pressed {
+    opacity: 1 !important;
+    outline: 3px solid #00c8ff !important;
+    border-radius: 24px;
+}
+
+/* Shoulder buttons */
+.controller.custom .bumpers {
+    position: absolute;
+    left: 130px;
+    top: 35px;
+    width: 755px;
+    height: 75px;
+}
+.controller.custom .bumper {
+    position: absolute;
+    top: 0;
+    width: 170px;
+    height: 65px;
+}
+.controller.custom .bumper.left { left: 0; }
+.controller.custom .bumper.right { right: 0; }
+.controller.custom .bumper.pressed {
+    outline: 3px solid #00c8ff !important;
+    border-radius: 18px;
+}
+
+/* D-pad */
+.controller.custom .dpad {
+    position: absolute;
+    left: 85px;
+    top: 125px;
+    width: 205px;
+    height: 190px;
+}
+.controller.custom .face {
+    position: absolute;
+    border-radius: 10px;
+}
+.controller.custom .face.up,
+.controller.custom .face.down {
+    width: 65px;
+    height: 65px;
+    left: 70px;
+}
+.controller.custom .face.up { top: 0; }
+.controller.custom .face.down { bottom: 0; }
+.controller.custom .face.left,
+.controller.custom .face.right {
+    width: 65px;
+    height: 65px;
+    top: 62px;
+}
+.controller.custom .face.left { left: 0; }
+.controller.custom .face.right { right: 0; }
+.controller.custom .face.pressed {
+    background: rgba(0, 200, 255, .4) !important;
+    outline: 2px solid #00c8ff !important;
+}
+
+/* Face buttons */
+.controller.custom .abxy {
+    position: absolute;
+    left: 700px;
+    top: 100px;
+    width: 220px;
+    height: 220px;
+}
+.controller.custom .button {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.controller.custom .button.y {
+    top: 0;
+    left: 75px;
+}
+.controller.custom .button.x {
+    top: 75px;
+    left: 0;
+}
+.controller.custom .button.b {
+    top: 75px;
+    right: 0;
+}
+.controller.custom .button.a {
+    bottom: 0;
+    left: 75px;
+}
+.controller.custom .button.pressed {
+    background: rgba(0, 200, 255, .38) !important;
+    outline: 3px solid #00c8ff !important;
+    box-shadow: 0 0 12px #00c8ff !important;
+}
+
+/* Analog sticks — visible rings and live movement */
+.controller.custom .sticks {
+    position: absolute;
+    left: 280px;
+    top: 295px;
+    width: 440px;
+    height: 145px;
+}
+.controller.custom .stick {
+    position: absolute;
+    top: 0;
+    width: 140px;
+    height: 140px;
+    box-sizing: border-box;
+    border: 3px solid #00c8ff !important;
+    border-radius: 50% !important;
+}
+.controller.custom .stick.left { left: 0; }
+.controller.custom .stick.right { left: 300px; }
+.controller.custom .stick.pressed {
+    border-color: #ffffff !important;
+    box-shadow: 0 0 12px #00c8ff !important;
+}
+
+/* Menu buttons and touchpad feedback */
+.controller.custom .arrows {
+    position: absolute;
+    left: 260px;
+    top: 65px;
+    width: 490px;
+    height: 100px;
+}
+.controller.custom .back,
+.controller.custom .start {
+    position: absolute;
+    width: 90px;
+    height: 65px;
+    border-radius: 12px;
+}
+.controller.custom .back { left: 0; }
+.controller.custom .start { right: 0; }
+.controller.custom .back.pressed,
+.controller.custom .start.pressed {
+    outline: 3px solid #00c8ff !important;
+}
+.controller.custom .touchpad {
+    position: absolute;
+    left: 340px;
+    top: 80px;
+    width: 335px;
+    height: 175px;
+    border-radius: 20px;
+}
+.controller.custom .touchpad.pressed {
+    outline: 3px solid #00c8ff !important;
+}
+.controller.custom .meta {
+    position: absolute;
+    left: 460px;
+    top: 335px;
+    width: 90px;
+    height: 75px;
+    border-radius: 50%;
+}
+.controller.custom .meta.pressed {
+    outline: 3px solid #00c8ff !important;
+}
