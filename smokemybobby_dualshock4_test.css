@@ -226,5 +226,5 @@
 /* Move the whole controller down */
 .controller.custom {
     position: relative !important;
-    top: 100px !important;
+    top: 800px !important;
 }
